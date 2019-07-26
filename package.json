@@ -11,13 +11,14 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.2",
+    "react-native-loading-spinner-overlay": "^1.0.1",
     "tslint-config-airbnb": "^5.11.0"
   },
   "peerDependencies": {
     "react": "^16.5.2",
     "react-native": "^0.57.1",
     "react-native-image-progress": "^1.1.1",
-    "react-native-progress": "^3.5.0",
-    "react-native-ui-lib": "^3.3.239"
+    "react-native-progress": "3.6.0",
+    "react-native-ui-lib": "3.32.1"
   }
 }
