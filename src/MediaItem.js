@@ -5,6 +5,8 @@ import { transparent, overlayClare } from './services/Theme';
 import * as Progress from 'react-native-progress';
 import ImageProgress from 'react-native-image-progress';
 import check from './checked.png';
+import PropTypes from 'prop-types';
+
 
 const styles = StyleSheet.create({
   checkIcon: {
