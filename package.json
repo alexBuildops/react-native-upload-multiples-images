@@ -1,6 +1,6 @@
 {
   "name": "react-native-upload-multiple-images",
-  "version": "1.0.7-rc",
+  "version": "1.0.8-rc",
   "description": "Component upload multiples images",
   "main": "./src/index.js",
   "repository": {
@@ -11,14 +11,14 @@
   "license": "MIT",
   "dependencies": {
     "prop-types": "^15.6.2",
-    "react-native-loading-spinner-overlay": "^1.0.1",
+    "react-native-image-progress": "1.1.1",
+    "react-native-loading-spinner-overlay": "1.0.1",
+    "react-native-progress": "3.6.0",
     "tslint-config-airbnb": "^5.11.0"
   },
   "peerDependencies": {
     "react": "^16.5.2",
     "react-native": "^0.57.1",
-    "react-native-image-progress": "^1.1.1",
-    "react-native-progress": "3.6.0",
     "react-native-ui-lib": "3.32.1"
   }
 }
