@@ -98,14 +98,17 @@ class MediaPicker extends Component {
       // logException(e.message);
       this.setState({loader: false});
     }
-    send = () => {
-      this.props.callback(this.state.selected, this.state.selectedItems);
-      this.setState({
-        selected: [],
-        selectedItems: [],
-      });
-    };
-    handleClick = (item) => {
+  };
+
+  send = () => {
+    this.props.callback(this.state.selected, this.state.selectedItems);
+    this.setState({
+      selected: [],
+      selectedItems: [],
+    });
+  };
+
+  handleClick = (item) => {
       const {uri} = item;
       let select = false;
 
@@ -127,8 +130,9 @@ class MediaPicker extends Component {
       }
       this.setState({selected});
       return select;
-    };
-    renderRow = (data) => {
+  };
+
+  renderRow = (data) => {
       const items = data.map((item) => {
         if (item === null) {
           return null;
@@ -150,9 +154,9 @@ class MediaPicker extends Component {
           {items}
         </View>
       );
-    };
-    render()
-    {
+  };
+
+  render() {
       const {selected, dataSource, viewImages} = this.state;
       return (
         <View
@@ -215,7 +219,6 @@ class MediaPicker extends Component {
         </View>
       );
     }
-  };
 }
 
 export default MediaPicker
